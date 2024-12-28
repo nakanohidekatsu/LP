@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>自己紹介ページ</title>
+    <link rel="stylesheet" href="/LP/stylesheet.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+  </head>
+<body>
+ <header>
+<div>
+    <h1>中野 英克（9期生）の自己紹介ページ</h1>
+    <h4>About:中野英克（なかのん）の趣味、コレクション、好きな事など適度に晒してみます。</h4>
+    <div class="header-right">
+        <a href="#collection" class="btn">コレクション</a>
+        <a href="#event" class="btn">参加ライブ</a>
+    </div>
+</div>
+    
+    <script type="text/javascript">
+        function openImage(imageUrl) {
+            // 新しいウィンドウのサイズ指定
+            var windowFeatures = "width=1600,height=1200";
+            // 新しいウィンドウを開く
+            window.open(imageUrl, "_blank", windowFeatures);
+        }
+    </script>
+
+    <script>
+        function showPopup(popupId) {
+            // すべてのポップアップを非表示にする
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function(popup) {
+                popup.style.display = 'none';
+            });
+
+            // 特定のポップアップを表示する
+            var popup = document.getElementById(popupId);
+            popup.style.display = 'block';
+        }
+
+        function closePopup(popupId) {
+            var popup = document.getElementById(popupId);
+            popup.style.display = 'none';
+        }
+    </script>
+  </header>
+
+  <main>  
+<div class="top-wrapper">
+    <a id="principle-page"></a>
+    <div class="container">
+      <div class="heading">
+        <h1>新しいチャレンジを楽しみましょう<br>
+          よろしくお願いします！
+        </h1>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="py-5 text-center container">
+        <div class="col-lg-8 col-md-8 mx-auto">
+            <h1 class="fw-light" id="collection">楽器コレクション</h1>
+            <p class="lead text-body-secondary">使わなくなったら売ったり買ったりしていますので、今手元にあるのはこんな感じです。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="album py-5 bg-body-tertiary">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="fit-picture" src="/LP/img/wbass.jpeg" alt="WoodBass"/>
+              <div class="card-body">
+                <p class="card-text">Gliga製 GemsⅡGamba Shape/F.Back </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openImage('/LP/img/wbass.jpeg')">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('popup1')">detail </button>
+                    <!-- ポップアップコンテンツ -->
+                    <div id="popup1" class="popup">
+                       <p>このコントラバスは1年前に購入したものです。本格的にジャズ演奏をしたくて購入しました。ルーマニア製で単板（つぎはぎの無い一枚板）でできていてとても良い音がします。REALISTのピックアップを着けています</p>
+                       <button class="close-btn" onclick="closePopup('popup1')">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="fit-picture" src="/LP/img/sadowsky.jpeg" alt="sadowsky" />
+              <div class="card-body">
+                <p class="card-text">Sadowsky製 MetroLine Will Lee model 5-String</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openImage('/LP/img/sadowsky.jpeg')">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('popup2')">detail </button>
+                    <!-- ポップアップコンテンツ -->
+                    <div id="popup2" class="popup">
+                       <p>この5弦ベースは8年前に購入したものです。大好きなベーシスト（Will Lee）のモデルです。Sadowskyはニューヨーク系アーティストが好んで使っているとのこと。</p>
+                       <button class="close-btn" onclick="closePopup('popup2')">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="fit-picture" src="/LP/img/crews.jpeg" alt="crews" />
+              <div class="card-body">
+                <p class="card-text">Crews Maniac Sound製 Jackson5 Standard</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openImage('/LP/img/crews.jpeg')">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('popup3')">detail </button>
+                    <!-- ポップアップコンテンツ -->
+                    <div id="popup3" class="popup">
+                       <p>この5弦ベースは6年前に購入したものです。フレットレス（指板上にフレットがない）のモデルとなっており、暖かい音が特徴です。Crews Maniac Soundは長野県松本市の飛鳥工場（ディバイザー）で作られました。</p>
+                       <button class="close-btn" onclick="closePopup('popup3')">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="fit-picture" src="/LP/img/hefner.jpeg" alt="hefner" />
+              <div class="card-body">
+                <p class="card-text">Hofner製  Violin Bass 62 Mersey H500</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openImage('/LP/img/hefner.jpeg')">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('popup4')">detail </button>
+                    <!-- ポップアップコンテンツ -->
+                    <div id="popup4" class="popup">
+                       <p>このバイオリンベースは11年前に購入したものです。ポールマッカートニーが使っていることで有名なベースですが、ビートルズは演奏したことがありません。HefnerのMade in Germany</p>
+                       <button class="close-btn" onclick="closePopup('popup4')">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img class="fit-picture" src="/LP/img/gibson.jpeg" alt="gibson" />
+                <div class="card-body">
+                <p class="card-text">Gibson製 ES-335 (1965)</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openImage('/LP/img/gibson.jpeg')">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('popup5')">detail </button>
+                    <!-- ポップアップコンテンツ -->
+                    <div id="popup5" class="popup">
+                       <p>このギターは9年前に入手したものです。GibsonのES-335という超有名なモデルでいわゆる”セミアコ”というものでラリー・カールトン、B.B.キングなどの著名なギタリストに愛用されています。1965年製のビンテージ品です。</p>
+                       <button class="close-btn" onclick="closePopup('popup5')">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="fit-picture" src="/LP/img/korg.jpeg" alt="korg" />
+              <div class="card-body">
+              <p class="card-text">KORG製 MONOLOGUE-BL</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openImage('/LP/img/korg.jpeg')">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('popup7')">detail </button>
+                  <!-- ポップアップコンテンツ -->
+                  <div id="popup7" class="popup">
+                     <p>このシンセサイザーは6年前に購入したものです。強烈なアナログ・シンセの音で一時期シンセベースとして使っていました。</p>
+                     <button class="close-btn" onclick="closePopup('popup7')">閉じる</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        
+    <section class="py-5 text-center container">
+        <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light" id="event">今年の参加ライブ</h1>
+        <p class="lead text-body-secondary">いくつかのバンドに所属しておりライブやフェスで出演しました。<br>一部ですが晒してみます。  </p>
+        </div>
+    </section>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">Acoustic</strong>
+                  <h3 class="mb-0">at 定禅寺STREET JAZZ FESTIVAL</h3>
+                  <div class="mb-1 text-body-secondary">2024年9月7日</div>
+                  <p class="card-text mb-auto">仙台市で開催される日本最大のアマチュア音楽イベントに参加しました</p>
+                  <a href="https://www.youtube.com/watch?v=V6QPXcOWgUM" target="_blank" class="youtube-thumbnail">
+                    <img src="https://img.youtube.com/vi/V6QPXcOWgUM/0.jpg" alt="YouTube サムネイル">
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Gospel</strong>
+                <h3 class="mb-0">at 目黒Gospel</h3>
+                <div class="mb-1 text-body-secondary">2024年11月17日</div>
+                <p class="card-text mb-auto">ゴスペルクワイア（Sheep Ribbons）のバックバンドは8年くらいやっています!
+                </p>
+                <a href="https://www.youtube.com/watch?v=UsN50Yx0SpY" target="_blank" class="youtube-thumbnail">
+                  <img src="https://img.youtube.com/vi/UsN50Yx0SpY/0.jpg" alt="YouTube サムネイル">
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Jazz</strong>
+              <h3 class="mb-0">at 池袋 Apple Jump</h3>
+              <div class="mb-1 text-body-secondary">2024年2月17日</div>
+              <p class="card-text mb-auto">スタンダードジャズのバンド! なんちゃってJazzです</p>
+              <a href="https://www.youtube.com/watch?v=DRxAf6B9VOM" target="_blank" class="youtube-thumbnail">
+                <img src="https://img.youtube.com/vi/DRxAf6B9VOM/0.jpg" alt="YouTube サムネイル">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Acoustic</strong>
+              <h3 class="mb-0">at 池袋ジャズフェスティバル</h3>
+              <div class="mb-1 text-body-secondary">2024年5月18日</div>
+              <p class="card-text mb-auto">池袋のフェス街中（裏道）での演奏です。天気も良くて最高でした</p>
+              <a href="https://www.youtube.com/watch?v=MUO1ZNjUeo0" target="_blank" class="youtube-thumbnail">
+                <img src="https://img.youtube.com/vi/MUO1ZNjUeo0/0.jpg" alt="YouTube サムネイル">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  </main>
+  
+  <footer class="text-body-secondary py-5">
+    <div class="container">
+        <h4>Contact</h4>
+          <a href="https://www.instagram.com/nakanohide/" class="text-black">Follow on Instagram</a><br>
+          <a href="https://www.facebook.com/hidekatsu.nakanon/" class="text-black">Like on Facebook</a><br>
+          <a href="https://www.youtube.com/@HNakanon" class="text-black">Follow on YouTube</a>
+       
+      <p class="float-end mb-1">
+        <a href="#" Class="back-to-top">Back to top</a>
+      </p>
+      <p class="mb-1"></p>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
