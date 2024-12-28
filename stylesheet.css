@@ -84,7 +84,7 @@
   height:100vh; /*要素の高さ指定*/
   background-position: center;
   padding: 0 0 0 0;
-  background-image: url("/LP/img/Top.png");
+  background-image: url("/img/Top.png");
   background-size: 45%;
   background-repeat:no-repeat; 
 }
